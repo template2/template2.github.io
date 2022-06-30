@@ -1,0 +1,140 @@
+/*
+// Distributed under Apache 2 License
+// apost.kr
+// version 1.0.0
+// 2019-02-27
+*/
+
+.reserve-form > .reserve-inner{
+    float: left;
+}
+.reserve-form > .reserve-inner.cmd{
+	width: 100%;
+}
+.reserve-form > .reserve-inner > div{
+    display: inline;
+}
+.reserve-form .field {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 8px;
+}
+.reserve-form input[type=text],
+.reserve-form input[type=password],
+.reserve-form textarea,
+.reserve-form select {
+	border: 1px solid #e8e8e8;
+	font-size: 0.9375em;
+	line-height: 1.25;
+	color: #383838;
+	background-color: #fff;
+}
+.reserve-form input[type=text],
+.reserve-form input[type=password],
+.reserve-form select {
+	width: 140px;
+	height: 42px;
+	margin-right: 6px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.reserve-form input::-webkit-input-placeholder,
+.reserve-form textarea::-webkit-input-placeholder {color: #686868;}
+.reserve-form textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	resize: none;
+	box-sizing: border-box;
+}
+.reserve-form .field .secret {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.reserve-form .field .secret input {
+	display: none;
+}
+.reserve-form .field .secret label {
+	font-size: 1em;
+	line-height: 52px;
+	color: #383838;
+	outline: none;
+	cursor: pointer;
+}
+.reserve-form .field .secret label:before {
+	content:"\f0c8";
+	font-family:"Font Awesome 5 Free";
+	display: inline-block;
+	margin: -5px 5px 0 0;
+	vertical-align: middle;
+	font-size: 1.5em;
+}
+.reserve-form .field .secret input[type=checkbox]:checked+label:before {
+	content:"\f14a";
+	font-family:"Font Awesome 5 Free";
+	font-weight:600;
+	color: #383838;
+}
+.reserve-form .submit {
+	display: inline-block;
+	padding: 10px 20px;
+    border: 1px solid #e6e6e6;
+    margin: 0 0 5px 0;
+	font-size: 0.9375em;
+	cursor: pointer;
+}
+.reserve-form .submit:hover {
+	color: #222;
+	border: 1px solid #222;
+}
+
+.reserve-form input[type=text].reserve_day{
+    width: 100px;
+}
+.reserve-form select.reserve_hour{
+    width: 70px;
+}
+.reserve-form select.reserve_min{
+    width: 70px;
+}
+
+.reserve-form{
+    border: 5px solid #e8e8e8;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.reserve-form h1{
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.reserve-form input, .reserve-form select, .reserve-form textarea, .reserve-form a.submit{
+    margin-bottom: 5px;
+}
+.reserve-form .notice{
+    padding: 10px 5px 20px;
+    box-sizing: border-box;
+}
+.reserve-form .notice h3{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #a00;;
+}
+
+/* 기존 댓글 */
+.reservation .comment-form{
+	display: none;
+}
+.comments .comment-form .submit{
+	margin-bottom: 5px;
+}
+.reservation.hideeditdel .editdel{
+	display: none;
+}
+.reserve-form .clear{
+    clear:both;
+}
